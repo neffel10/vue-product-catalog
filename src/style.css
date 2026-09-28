@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
 @theme {
+  /* Reasignamos la escala de slate para que TODO el fondo sea verde Vue profundo */
+  --color-slate-950: #0d1f18; /* Fondo principal de la app (verde muy oscuro tipo bosque) */
+  --color-slate-900: #122820; /* Fondo de tarjetas, filtros, navbar y contenedores */
+  --color-slate-800: #1b3d30; /* Bordes y divisores en verde medio */
+  --color-slate-700: #265443; /* Bordes de inputs e interactivos */
+  --color-slate-600: #33715a;
+  --color-slate-400: #88c2a8; /* Textos secundarios en verde pálido legible */
+  --color-slate-300: #b5e0ce;
+  --color-slate-200: #e2f5ec;
+  --color-slate-100: #f0faf5;
+
+  /* Verde insignia oficial de Vue para botones y resaltados */
   --color-vue-primary: #42b883;
   --color-vue-dark: #33a06f;
-  --color-vue-navy: #35495e;
-  --color-vue-surface: #1a1a1a;
 }
