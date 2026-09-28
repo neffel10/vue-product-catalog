@@ -39,7 +39,7 @@ onMounted(() => {
         </div>
         <button 
           @click="isModalOpen = true"
-          class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-medium rounded-lg transition-colors cursor-pointer"
+          class="px-4 py-2 bg-vue-primary hover:bg-vue-dark text-slate-950 text-xs font-semibold rounded-lg transition-colors cursor-pointer"
         >
           + Nuevo Producto
         </button>
@@ -52,7 +52,7 @@ onMounted(() => {
         v-model="search"
         type="text" 
         placeholder="Buscar por título..." 
-        class="w-full sm:w-80 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500"
+        class="w-full sm:w-80 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-vue-primary"
       />
 
       <div class="flex flex-wrap gap-2">
@@ -63,7 +63,7 @@ onMounted(() => {
           :class="[
             'px-3 py-1.5 text-xs font-medium rounded-lg capitalize transition-colors cursor-pointer',
             selectedCategory === cat 
-              ? 'bg-indigo-600 text-white' 
+              ? 'bg-vue-primary text-slate-950 font-semibold' 
               : 'bg-slate-800 text-slate-400 hover:text-slate-200'
           ]"
         >
@@ -74,7 +74,7 @@ onMounted(() => {
 
     <!-- Estado: Cargando -->
     <div v-if="isLoading" class="p-12 text-center text-slate-400 bg-slate-900/50 rounded-xl border border-slate-800">
-      <div class="inline-block w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin mb-3"></div>
+      <div class="inline-block w-6 h-6 border-2 border-vue-primary border-t-transparent rounded-full animate-spin mb-3"></div>
       <p class="text-sm">Cargando catálogo...</p>
     </div>
 

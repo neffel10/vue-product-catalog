@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --color-vue-primary: #42b883;
+  --color-vue-dark: #33a06f;
+  --color-vue-navy: #35495e;
+  --color-vue-surface: #1a1a1a;
+}
